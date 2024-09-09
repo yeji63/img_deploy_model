@@ -32,6 +32,9 @@ if img_file_buffer is not None:
     # 원본 이미지 불러오기
     image = Image.open(img_file_buffer).convert('RGB')
 
+    # 업로드된 이미지 화면에 표시
+    st.image(image, caption="업로드된 이미지", use_column_width=True)
+    
     #resize the image to a 224x224 with the same strategy as in TM2:
     #resizing the image to be at least 224x224 and then cropping from the center
     # 모델에 들어갈 수 있는 224 x 224 사이즈로 변환 
