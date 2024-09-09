@@ -12,7 +12,7 @@ model = load_model('keras_model.h5', compile=False)
 # Load the labels
 class_names = open('labels.txt', 'r', encoding="UTF-8").readlines()
 
-st.header('닮은 연예인 판별기(전여빈/해리포터/아이린)')
+st.header('닮은 연예인 판별기(전여빈/해리포터/유진)')
 # Create the array of the right shape to feed into the keras model
 # The 'length' or number of images you can put into the array is
 # determined by the first position in the shape tuple, in this case 1.
